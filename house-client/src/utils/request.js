@@ -6,7 +6,7 @@ const service = axios.create({
     baseURL: 'http://localhost:9002', // api的base_url
 
     //上线环境
-    baseURL: 'http://47.103.88.133:9002', // api的base_url
+    // baseURL: 'http://localhost:9002', // api的base_url
     timeout: 30000 ,// 请求超时时间
     headers: { 'Authorization': 'Bearer '+getUser().token  }
   })
